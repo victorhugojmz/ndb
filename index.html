@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <hello-world>Loading...</hello-world>
+    
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCtcyoDg5_SOW9k0ZZoBZzsE4psGSUkIt0",
+    authDomain: "jedis-6a75a.firebaseapp.com",
+    databaseURL: "https://jedis-6a75a.firebaseio.com",
+    storageBucket: "jedis-6a75a.appspot.com",
+    messagingSenderId: "114460119935"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
